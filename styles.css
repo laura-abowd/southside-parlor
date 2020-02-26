@@ -64,3 +64,9 @@ hr {
     margin: 10px 0px 0px 0px;
     font-weight: 600;
 }
+
+/* .blue-band {
+    border: 1px solid var(--secondary-blue);
+    height: 5px;
+    background-color: var(--secondary-blue);
+} */
