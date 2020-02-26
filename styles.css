@@ -12,7 +12,6 @@ body {
     color: var(primary-black);
     scroll-behavior: smooth;
     font-family: var(--font-base);
-    
 }
 
 .menu-text {
@@ -22,10 +21,11 @@ body {
     text-decoration: underline;
 }
 
-.southside-logo-img {
+.southside-logo-container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+
 .content-container {
     max-width: 600px;
     text-align: center;
@@ -47,7 +47,7 @@ body {
 
 hr {
     border: 1px solid var(--secondary-blue);
-    width: 600px;
+    max-width: 600px;
 }
 
 .information-container {
@@ -70,3 +70,14 @@ hr {
     height: 5px;
     background-color: var(--secondary-blue);
 } */
+@media screen and (max-width: 650px) {
+    .southside-logo-container {
+        padding: 0 24px;
+    }
+    .southside-logo-img {
+        width: 100%;
+    }
+    hr {
+        width: 100%;
+    }
+}
