@@ -1,0 +1,66 @@
+:root {
+    --primary-black: hsl(0, 0%, 0%);
+    --secondary-blue: hsl(211, 57%, 45%);
+    --white: hsl(50, 64%, 95%);
+    --font-base: 'Montserrat', sans-serif;
+    --font-display: cochin;
+}
+
+html,
+body {
+    background-color: var(--white);
+    color: var(primary-black);
+    scroll-behavior: smooth;
+    font-family: var(--font-base);
+    
+}
+
+.menu-text {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.southside-logo-img {
+    text-align: center;
+    margin-top: 100px;
+}
+.content-container {
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.content-container h3 {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 2rem;
+}
+
+hr {
+    border: 1px solid var(--secondary-blue);
+    width: 600px;
+}
+
+.information-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.information-container h5 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    margin: 10px 0px 0px 0px;
+    font-weight: 600;
+}
