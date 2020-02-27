@@ -77,7 +77,20 @@ hr {
     .southside-logo-img {
         width: 100%;
     }
+    .content-container h3 {
+        font-size: 1.5rem;
+    }
     hr {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    hr {
+       display: none;
+    }
+    .information-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
