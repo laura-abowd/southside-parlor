@@ -39,10 +39,11 @@ body {
     font-size: 1.75rem;
 }
 
-.content-container h3 {
+.content-container h6 {
     font-family: var(--font-display);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin: 20px 0 20px 0;
 }
 
 hr {
