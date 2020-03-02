@@ -12,12 +12,30 @@ body {
     color: var(primary-black);
     scroll-behavior: smooth;
     font-family: var(--font-base);
+    margin: 0 auto;
 }
 
-.menu-text {
+.top-container {
+    height: 100px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.7) 13.02%, rgba(196, 196, 196, 0.35) 100%);
+/* transform: rotate(-180deg); */
+}
+.top-container p {
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     text-align: center;
+    text-decoration: underline;
+    margin: 0;
+}
+.menu-text {
+    position: absolute;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
     text-decoration: underline;
 }
 
@@ -31,24 +49,29 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
 }
 
-.content-container h2 {
+.content-container h1 {
     font-weight: 400;
     text-align: center;
     font-size: 1.75rem;
 }
 
-.content-container h6 {
+.content-container h2 {
     font-family: var(--font-display);
     text-align: center;
     font-size: 1.75rem;
-    margin: 20px 0 20px 0;
+    margin: 0;
 }
-
+.content-container li {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    list-style: none;
+    line-height: 1.5;
+}
 hr {
     border: 1px solid var(--secondary-blue);
-    max-width: 600px;
 }
 
 .information-container {
@@ -56,21 +79,17 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     text-align: center;
-    width: 100%;
+    width: 600px;
+    margin: auto;
 }
 
 .information-container h5 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     margin: 10px 0px 0px 0px;
     font-weight: 600;
 }
 
-/* .blue-band {
-    border: 1px solid var(--secondary-blue);
-    height: 5px;
-    background-color: var(--secondary-blue);
-} */
 @media screen and (max-width: 650px) {
     .southside-logo-container {
         padding: 0 24px;
@@ -81,17 +100,20 @@ hr {
     .content-container h3 {
         font-size: 1.5rem;
     }
-    hr {
+    /* hr {
         width: 100%;
-    }
+    } */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+    .information-container {
+        width: 100%;
+    }
     hr {
        display: none;
     }
     .information-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
