@@ -15,29 +15,96 @@ body {
     margin: 0 auto;
 }
 
-.top-container {
+nav  {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin: auto;
+    /* text-align: center; */
     height: 100px;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.7) 13.02%, rgba(196, 196, 196, 0.35) 100%);
-/* transform: rotate(-180deg); */
 }
-.top-container p {
+
+ul {
+    padding-inline-start: 0;
+}
+
+.menu-btn {
     font-family: var(--font-display);
     font-size: 1.5rem;
-    text-align: center;
-    text-decoration: underline;
+    background: none;
+    text-decoration: none;
+    border: none;
+    /* padding: 0; */
+    /* text-decoration: underline; */
+    cursor: pointer;
+    outline: none;
+    padding-right: 40px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
     margin: 0;
 }
-.menu-text {
-    position: absolute;
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    text-decoration: underline;
+
+.order-link a {
+    text-decoration: none;
 }
+.order-link a:visited {
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+nav ul  {
+    color: var(--primary-black);
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    /* background-color: pink; */
+}
+
+.menu-links {
+    color: var(--primary-black);
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    padding:  10px 20px;
+    margin-top: 10px;
+    transform: translateY(-10px);
+}
+
+.menu-links li:hover {
+    background-color: var(--secondary-blue);
+   
+}
+
+.nav-links li:hover .menu-links {
+    display: block;
+    background-color: white;
+}
+
+/* .menus ul {
+ 
+  background: white;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+} */
+
+/* .menu-links li a {
+    text-decoration: none;
+    color: var(--primary-black);
+    width: 100%;
+} */
 
 .southside-logo-container {
     text-align: center;
