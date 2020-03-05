@@ -15,96 +15,115 @@ body {
     margin: 0 auto;
 }
 
-nav  {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    margin: auto;
-    /* text-align: center; */
-    height: 100px;
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0.7) 13.02%, rgba(196, 196, 196, 0.35) 100%);
+nav {
+    overflow: hidden;
+    background-color: #333;
 }
 
-ul {
-    padding-inline-start: 0;
-}
-
-.menu-btn {
+nav a {
+    float: right;
     font-family: var(--font-display);
-    font-size: 1.5rem;
-    background: none;
+    font-size: 1.25rem;
+    text-align: center;
+    /* padding: 14px 16px; */
     text-decoration: none;
-    border: none;
-    /* padding: 0; */
-    /* text-decoration: underline; */
-    cursor: pointer;
-    outline: none;
-    padding-right: 40px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
+    padding-right: 100px;
+}
+
+.menu-dropdown {
+    float: right;
+    overflow: hidden;
+    /* padding-right: 150px; */
+}
+.order-dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.menu-dropdown .menu-btn {
+    font-size: 1.25rem; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px;
+    background-color: inherit;
+    font-family: inherit;
     margin: 0;
 }
 
-.order-link a {
-    text-decoration: none;
-}
-.order-link a:visited {
-    text-decoration: none;
-    color: var(--primary-black);
-}
-
-nav ul  {
-    color: var(--primary-black);
-    list-style: none;
-    text-decoration: none;
-    position: relative;
-    /* background-color: pink; */
+.order-dropdown .order-btn {
+    font-size: 1.25rem; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-.menu-links {
-    color: var(--primary-black);
-    border-radius: 0px 0px 5px 5px;
+nav a:hover, 
+.menu-dropdown:hover ,
+.menu-btn,
+.order-dropdown:hover,
+.order-btn {
+    background-color: var(--secondary-blue);
+}
+
+.menu-dropdown-content {
     display: none;
     position: absolute;
-    width: 200px;
-    padding:  10px 20px;
-    margin-top: 10px;
-    transform: translateY(-10px);
+    background-color: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.menu-links li:hover {
-    background-color: var(--secondary-blue);
-   
+.order-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.nav-links li:hover .menu-links {
-    display: block;
-    background-color: white;
-}
-
-/* .menus ul {
- 
-  background: white;
-  margin-top: 10px;
-  width: 200px;
-  height: 200px;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-} */
-
-/* .menu-links li a {
-    text-decoration: none;
+.menu-dropdown-content a {
+    float: none;
     color: var(--primary-black);
-    width: 100%;
-} */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    /* width: 200px; */
+    text-align: left;
+}
+
+.order-dropdown-content a {
+    float: none;
+    color: var(--primary-black);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+   
+    text-align: left;
+}
+
+.menu-dropdown-content a:hover,
+.order-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+}
+
+.order-dropdown:hover .order-dropdown-content {
+    display: block;
+}
 
 .southside-logo-container {
     text-align: center;
@@ -159,7 +178,7 @@ hr {
 
 @media screen and (max-width: 650px) {
     .southside-logo-container {
-        padding: 0 24px;
+        padding: 0 50px;
     }
     .southside-logo-img {
         width: 100%;
@@ -167,9 +186,6 @@ hr {
     .content-container h3 {
         font-size: 1.5rem;
     }
-    /* hr {
-        width: 100%;
-    } */
 }
 
 @media screen and (max-width: 550px) {
