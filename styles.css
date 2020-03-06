@@ -18,6 +18,10 @@ body {
 nav {
     overflow: hidden;
     background-color: #333;
+    text-align: center;
+    line-height: 1rem;
+    /* height: 100px; */
+   
     /* background: linear-gradient(180deg, rgba(196, 196, 196, 0.7) 13.02%, rgba(196, 196, 196, 0.35) 100%); */
 }
 
@@ -26,7 +30,7 @@ nav a {
     font-family: var(--font-display);
     font-size: 1.25rem;
     text-align: center;
-    /* padding: 14px 16px; */
+    padding: 8px 12px;
     text-decoration: none;
 }
 
@@ -37,8 +41,8 @@ nav a {
 .menu-dropdown {
     float: right;
     overflow: hidden;
-    /* padding-right: 150px; */
 }
+
 .order-dropdown {
     float: right;
     overflow: hidden;
