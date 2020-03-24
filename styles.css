@@ -15,22 +15,11 @@ body {
     margin: 0 auto;
 }
 
-nav {
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-    line-height: 1rem;
-    /* height: 100px; */
-    /* background: linear-gradient(180deg, rgba(196, 196, 196, 0.7) 13.02%, rgba(196, 196, 196, 0.35) 100%); */
-}
-
-nav a {
-    float: right;
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 8px 12px;
-    text-decoration: none;
+#nav-bar {
+  display: flex;
+  overflow: hidden;
+  height: 80px;
+  background: linear-gradient(to top, rgba(9, 5, 4, 0.7) 0%, rgba(46, 25, 20, 0.7) 100%);
 }
 
 h1,
@@ -40,9 +29,16 @@ h2 {
   font-weight: 400;
 }
 
-
 .nav-links {
-    padding-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 24px;
+}
+
+.icon-btn {
+  padding: 0 12px;
 }
 
 .menu-dropdown {
@@ -56,14 +52,14 @@ h2 {
 }
 
 .menu-dropdown .menu-btn {
-    font-size: 1.25rem;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px;
+  background-color: inherit;
+  font-family: inherit;
+    /*margin: 0;*/
 }
 
 .order-dropdown .order-btn {
@@ -74,7 +70,7 @@ h2 {
     padding: 14px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    /*margin: 0;*/
 }
 
 nav a:hover,
@@ -86,41 +82,41 @@ nav a:hover,
 }
 
 .menu-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border-radius: 0 0 4px 4px;
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 0 0 4px 4px;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .order-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .menu-dropdown-content a {
-    float: none;
-    color: var(--primary-black);
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    /* width: 200px; */
-    text-align: left;
+  float: none;
+  color: var(--primary-black);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  /* width: 200px; */
+  text-align: left;
 }
 
 .order-dropdown-content a {
-    float: none;
-    color: var(--primary-black);
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: var(--primary-black);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .menu-dropdown-content a:hover,
@@ -138,9 +134,11 @@ nav a:hover,
 
 .southside-logo-container {
   text-align: center;
-  margin: 30px 0;
-  background: linear-gradient(180deg, rgba(243, 235, 220, 0.7) 0%, rgba(185, 181, 172, 0.7) 100%);
+  background: linear-gradient(to top, rgba(243, 235, 220, 0.7) 0%, rgba(185, 181, 172, 0.7) 100%);
+}
 
+.southside-logo-img {
+  padding-top: 40px;
 }
 
 .header-content {
@@ -150,7 +148,9 @@ nav a:hover,
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 740px) 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 10px 1fr 10px 1fr 10px;
 }
 
 .content-container {
@@ -171,21 +171,22 @@ nav a:hover,
   font-size: 1.5rem;
   list-style-type: none;
 }
+
 .content-container h5 {
     font-family: var(--font-display);
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-hr {
-    border: 1px solid var(--secondary-blue);
+.blue-shelf {
+  grid-column: 1 / span 3;
+  width: 100%;
 }
 
 .bottle-img-left {
   background-image: url("assets/southside-parlor-bottles.svg");
   background-position: bottom right;
   background-repeat: repeat-x;
-  /*align-self: end;*/
 }
 
 .bottle-img-right {
@@ -200,9 +201,7 @@ hr {
   background-image: url("assets/southside-parlor-bottles.svg");
   background-repeat: repeat-x;
   background-position: bottom center;
-  border-bottom: 5px solid black;
 }
-
 
 .information-container {
   max-width: 600px;
@@ -221,6 +220,20 @@ hr {
     font-weight: 600;
     /*background-color: pink;*/
 }
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-footer {
+  padding: 32px 0;
+}
+
+
 
 @media screen and (max-width: 650px) {
     .southside-logo-container {
