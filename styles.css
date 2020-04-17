@@ -218,6 +218,17 @@ h3 {
   font-size: 1.25rem;
 }
 
+.shelf {
+  width: 100%;
+  border: 5px solid brown;
+}
+
+.tile-top {
+  background: red;
+  background: linear-gradient(white 50%, black 50%);
+}
+
+
 .section {
   background-color: var(--white);
   height: 500px;
