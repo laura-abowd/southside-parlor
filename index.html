@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -40,20 +40,42 @@
           <a href="https://get.coupangeats.com/">Coupang Eats</a>
         </div>
       </div>
-      <div class="icons-container">
+      <!--       <div class="icons-container">
         <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook"><img src="assets/instagram-icon.png" alt=""></a>
         <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><img src="assets/facebook-icon.png" alt="" class="fb-icon-btn"></a>
-      </div>
+      </div> -->
     </div>
   </nav>
-  <div class="southside-logo-container">
-    <img src="assets/sp-logo.png" alt="" class="southside-logo-img">
-  </div>
-  <h1>Bar & Kitchen</h1>
-  <div class="grid-wrapper">
-    <div class="bottle-img-left">
+  <div class="southside-header">
+    <div class="southside-header_text">
+      <h1 class="southside-header__h1">Bar & Kitchen</h1>
+
     </div>
-    <div class="grid-container__top">
+    <!-- <img src="assets/sp-logo.png" alt="southside logo" class="southside-logo-img"> -->
+  </div>
+
+  <div class="tile-container">
+    <div class="tile-top"></div>
+    <div class="tile-bottom"></div>
+  </div>
+  <section>
+    <div class="about">
+      <div class="about__text">
+        <h3>About</h3>
+        <p>Welcome to Southside Parlor, where good ole southern hospitality meets South Korea's food scene. We are located in the heart of Itaewon and have been serving up tacos, wings, cocktails, and more since 2013. Check out our Facebook and Instagram pages for more information on our weekly events.<br>
+        <div>
+          <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook "><i class="fab fa-instagram fa-lg header__icon"></i></a>
+          <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram header__icon"><i class="fab fa-facebook fa-lg header__icon"></i></a>
+        </div>
+        <hr>
+          Get in touch: howdy@southsideparlor.com</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- new restaurant details section -->
+  <section>
+    <div class="grid-container__hours">
       <div class="grid__column">
         <h2 class="grid__column-h2">Hours:</h2>
       </div>
@@ -65,73 +87,36 @@
         <li>Closed Monday</li>
       </div>
     </div>
-    <div class="bottle-img-right">
-    </div>
-    <img src="assets/shelf-img.png" alt="" class="blue-shelf">
-    <div class="bottle-img-left">
-    </div>
-    <div class="grid-container">
-      <div class="grid__column">
+    <div class="grid-container-new">
+      <div class="grid__column-new">
         <h2 class="grid__column-h2">Happy Hour</h2>
         <p class="grid__column-p">Sunday-Friday,<br>6pm-9pm</p>
       </div>
-      <div class="grid__column">
+      <div class="grid__column-new">
         <h2 class="grid__column-h2">Location</h2>
         <p class="grid__column-p">Yongsan-gu,<br>Itaewon-dong, <br>527 번지 4 층<br>Seoul, Korea 04345</p>
       </div>
-      <div class="grid__column">
+      <div class="grid__column-new">
         <h2 class="grid__column-h2">Contact</h2>
         <p class="grid__column-p">+82 2-749-9522</p>
       </div>
     </div>
-    <div class="bottle-img-right">
-    </div>
-    <img src="assets/shelf-img.png" alt="" class="blue-shelf">
-    <!-- <div class="shelf"></div> -->
-    <div class="bottles-bottom">
-    </div>
-    <img src="assets/shelf-img.png" alt="" class="blue-shelf">
-  </div>
-<div class="tile-container">
-  <div class="tile-top"></div>
-  <div class="tile-bottom"></div>
-</div>
-  <section class="section">
-    <div class="about">
-      <div class="about__text">
-        <h3>About</h3>
-        <p>Welcome to Southside Parlor, where good ole southern hospitality meets South Korea's food scene. We are located in the heart of Itaewon and have been serving up tacos, wings, cocktails, and more since 2013. Check out our Facebook and Instagram pages for more information on our weekly events.
-          <hr>
-        Get in touch: howdy@southsideparlor.com</p>
-      </div>
-      <div class="carousel-container">
-        <div class="carousel__images fade">
-          <img class="about__img" src="assets/restaurant_inside.jpg" alt="">
-        </div>
-        <div class="carousel__images fade">
-          <img class="about__img" src="assets/rooftop.jpg" alt="">
-        </div>
-        <div class="carousel__images fade">
-          <img class="about__img" src="assets/Bomin.jpg" alt="">
-        </div>
-        <div class="carousel__images fade">
-          <img class="about__img" src="assets/bartender1.jpg" alt="">
-        </div>
-        <div class="arrows">
-          <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left fa-lg"></i></a>
-          <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right fa-lg"></i></a>
-        </div>
-      </div>
+  </section>
+  <section>
+    <div class="container__images">
+      <img src="assets/drink1.jpg" alt="">
+      <img src="assets/drink2.jpg" alt="">
+      <img src="assets/drink3.jpg" alt="">
+      <img src="assets/jameson_drink.jpg" alt="">
     </div>
   </section>
   <footer class="footer">
-    <div></div>
+    <!-- <div></div> -->
+    <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook"><i class="fab fa-instagram fa-2x footer__icon"></i></a>
     <img src="assets/sp-logo-white.png" alt="" class="footer__logo">
-    <div class="icons-container">
-      <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook"><img src="assets/instagram-icon.png" alt=""></a>
-      <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><img src="assets/facebook-icon.png" alt="" class="fb-icon-btn"></a>
-    </div>
+    <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-2x footer__icon"></i></a>
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

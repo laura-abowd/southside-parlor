@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
 :root {
     --primary-black: hsl(0, 0%, 0%);
     --secondary-blue: hsl(211, 57%, 45%);
     --white: hsl(39, 49%, 91%);
     --font-base: 'Montserrat', sans-serif;
-    --font-display: cochin;
+    --font-display: 'cochin';
+    --courier: 'Courier Prime', monospace;
 }
 
 html,
@@ -18,8 +21,8 @@ body {
 #nav-bar {
   display: flex;
   overflow: hidden;
-  height: 80px;
-  background: linear-gradient(to top, rgba(9, 5, 4, 0.7) 0%, rgba(46, 25, 20, 0.7) 100%);
+  height: 60px;
+/*  background: linear-gradient(to top, rgba(9, 5, 4, 0.7) 0%, rgba(46, 25, 20, 0.7) 100%);*/
 }
 
 h1 {
@@ -29,16 +32,15 @@ h1 {
 }
 
 h3 {
-    font-size: 2rem;
-  font-family: var(--font-display);
+  font-size: 2rem;
+  font-family: var(--font-base);
 }
 
 .nav__links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding-right: 50px;
 }
 
 .btn {
@@ -60,7 +62,7 @@ h3 {
   font-size: 1.25rem;
   border: none;
   outline: none;
-  color: white;
+  color: var(--primary-black);
   padding: 14px;
   background-color: inherit;
   font-family: inherit;
@@ -68,12 +70,11 @@ h3 {
 
 .order-dropdown .btn__order {
   font-size: 1.25rem;
-  color: white;
+  color: var(--primary-black);
   padding: 14px;
   background-color: inherit;
   font-family: inherit;
 }
-
 
 .nav__menus:hover,
 .order-dropdown:hover {
@@ -129,13 +130,31 @@ h3 {
     display: block;
 }
 
-.icon {
-  padding: 0 12px;
+.southside-header {
+  /*text-align: center;*/
+  background-image: url('assets/bar_shelf.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+/*  background: linear-gradient(to top, rgba(243, 235, 220, 0.7) 0%, rgba(185, 181, 172, 0.7) 100%);*/
 }
 
-.southside-logo-container {
+.header__icon {
+  color: var(--primary-black);
+}
+.southside-header_text {
   text-align: center;
-  background: linear-gradient(to top, rgba(243, 235, 220, 0.7) 0%, rgba(185, 181, 172, 0.7) 100%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*padding: 300px;*/
+}
+
+.southside-header__h1 {
+  color: white;
+  font-size: 5rem;
 }
 
 .southside-logo-img {
@@ -153,8 +172,8 @@ h3 {
   grid-template-rows: 1fr 10px 1fr 10px 1fr 10px;
 }
 
-.grid-container__top {
-  max-width: 600px;
+.grid-container__hours {
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -163,71 +182,35 @@ h3 {
   align-self: center;
 }
 
-.grid-container__top li {
-  font-size: 1.5rem;
+.grid-container__hours li {
+  font-size: 1.25rem;
   list-style-type: none;
+  font-family: var(--courier);
 }
 
-.blue-shelf {
-  grid-column: 1 / span 3;
-  width: 100%;
-}
-
-.bottle-img-left {
-  background-image: url("assets/southside-parlor-bottles.svg");
-  background-position: bottom right;
-  background-repeat: repeat-x;
-
-   transform: translate3d(0px, 0px, 0px);
-}
-
-.bottle-img-right {
-  background-image: url("assets/southside-parlor-bottles.svg");
-  background-repeat: repeat-x;
-  background-position: bottom left;
-}
-
-.bottles-bottom {
-  display: grid;
-  grid-column: span 3;
-  background-image: url("assets/southside-parlor-bottles.svg");
-  background-repeat: repeat-x;
-  background-position: bottom center;
-}
-
-.grid-container {
-  max-width: 600px;
-  width: 100%;
+.grid-container-new {
+  width: 50%;
   text-align: center;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
   align-self: center;
   margin-top: 32px;
 }
 
 .grid__column-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-base);
   font-size: 1.75rem;
   margin-top: 32px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .grid__column-p {
-  font-family: var(--font-base);
+  font-family: var(--courier);
   font-size: 1.25rem;
 }
-
-.shelf {
-  width: 100%;
-  border: 5px solid brown;
-}
-
-.tile-top {
-  background: red;
-  background: linear-gradient(white 50%, black 50%);
-}
-
 
 .section {
   background-color: var(--white);
@@ -241,7 +224,9 @@ h3 {
 }
 
 .about__text {
-  max-width: 600px;
+  max-width: 800px;
+  font-family: var(--courier);
+  font-size: 1.125rem;
 }
 
 .about__img {
@@ -250,60 +235,32 @@ h3 {
   border-radius: 5px;
 }
 
-.carousel__images {
-  display: none;
+.container__images {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
 }
 
-.prev, .next {
-  cursor: pointer;
-  width: auto;
-  /*margin-top: -200px;*/
-  padding: 0 12px;
-  color: var(--secondary-blue);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.arrows {
-  text-align: center;
-  margin-top: 8px;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .75}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .75}
-  to {opacity: 1}
+.container__images img {
+  width: 25%;
+  object-fit: cover;
 }
 
 .footer {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .footer__logo {
-  padding: 32px 0;
+  padding: 32px 18px;
+}
+
+.footer__icon {
+  color: white;
 }
 
 @media screen and (max-width: 650px) {
