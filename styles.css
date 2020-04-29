@@ -22,7 +22,6 @@ body {
   display: flex;
   overflow: hidden;
   height: 60px;
-/*  background: linear-gradient(to top, rgba(9, 5, 4, 0.7) 0%, rgba(46, 25, 20, 0.7) 100%);*/
 }
 
 h1 {
