@@ -256,37 +256,30 @@ h3 {
 }
 
 .footer__logo {
-  padding: 32px 18px;
+  padding: 32px 48px;
 }
 
 .footer__icon {
   color: white;
 }
 
-@media screen and (max-width: 650px) {
-    .southside-logo-container {
-        padding: 0 50px;
-    }
-    .southside-logo-img {
-        width: 100%;
-    }
-
-    .nav__links {
+@media screen and (max-width: 850px) {
+    .grid-container-new {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
+  }
+
+    .container__images {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0;
-      padding: 0;
     }
+
+  .container__images img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
-@media screen and (max-width: 550px) {
-    .grid-container {
-        width: 100%;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-}
+
