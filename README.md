@@ -1,1 +1,1 @@
-# southside-parlor
+# Southside Parlor
