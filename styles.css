@@ -21,7 +21,7 @@ body {
 #nav-bar {
   display: flex;
   overflow: hidden;
-  height: 60px;
+  height: 80px;
 }
 
 h1 {
@@ -48,37 +48,23 @@ h3 {
   outline: none;
 }
 
-.nav__menus {
-  float: right;
-  overflow: hidden;
+.btn__nav {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--primary-black);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 32px;
+}
+
+.btn__nav:hover {
+  color: var(--secondary-blue);
+
 }
 
 .order-dropdown {
-  float: right;
+  /*float: right;*/
   overflow: hidden;
-}
-
-.nav__menus .btn__menu {
-  font-size: 1.25rem;
-  border: none;
-  outline: none;
-  color: var(--primary-black);
-  /*padding: 14px;*/
-  background-color: inherit;
-  font-family: inherit;
-}
-
-.order-dropdown .btn__order {
-  font-size: 1.25rem;
-  color: var(--primary-black);
-  /*padding: 14px;*/
-  background-color: inherit;
-  font-family: inherit;
-}
-
-.nav__menus:hover,
-.order-dropdown:hover {
-  background-color: var(--secondary-blue);
 }
 
 .menu-dropdown-content {
@@ -114,7 +100,7 @@ h3 {
   padding: 10px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 .menu-dropdown-content a:hover,
@@ -124,14 +110,16 @@ h3 {
 
 .nav__menus:hover .menu-dropdown-content {
     display: block;
+    margin: 0 24px;
 }
 
 .order-dropdown:hover .order-dropdown-content {
     display: block;
+    width: 15%;
+    margin: 0 24px;
 }
 
 .southside-header {
-  /*text-align: center;*/
   background-image: url('assets/southside-parlor-hero.png');
   opacity: 0.7;
   background-position: center;
