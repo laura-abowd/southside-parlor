@@ -33,6 +33,7 @@ h1 {
 h3 {
   font-size: 2rem;
   font-family: var(--font-base);
+  text-transform: uppercase;
 }
 
 .nav__links {
@@ -62,7 +63,7 @@ h3 {
   border: none;
   outline: none;
   color: var(--primary-black);
-  padding: 14px;
+  /*padding: 14px;*/
   background-color: inherit;
   font-family: inherit;
 }
@@ -70,7 +71,7 @@ h3 {
 .order-dropdown .btn__order {
   font-size: 1.25rem;
   color: var(--primary-black);
-  padding: 14px;
+  /*padding: 14px;*/
   background-color: inherit;
   font-family: inherit;
 }
@@ -131,35 +132,32 @@ h3 {
 
 .southside-header {
   /*text-align: center;*/
-  background-image: url('assets/bar_shelf.jpg');
+  background-image: url('assets/southside-parlor-hero.png');
+  opacity: 0.7;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-/*  background: linear-gradient(to top, rgba(243, 235, 220, 0.7) 0%, rgba(185, 181, 172, 0.7) 100%);*/
+  height: 90vh;
 }
 
 .header__icon {
   color: var(--primary-black);
 }
+
 .southside-header_text {
   text-align: center;
-  margin: 0;
+  margin-top: 180px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*padding: 300px;*/
 }
 
 .southside-header__h1 {
-  color: white;
+  color: var(--white);
   font-size: 5rem;
   padding: 20px;
-  border: 5px solid white;
-}
-
-.southside-logo-img {
-  padding-top: 40px;
+  border: 5px solid var(--white);
+  background-color: hsla(0,0%,0%,60%);
 }
 
 .header-content {
