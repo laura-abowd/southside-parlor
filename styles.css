@@ -59,11 +59,9 @@ h3 {
 
 .btn__nav:hover {
   color: var(--secondary-blue);
-
 }
 
 .order-dropdown {
-  /*float: right;*/
   overflow: hidden;
 }
 
@@ -145,6 +143,36 @@ h3 {
 
 .header-content {
   margin: 0 auto;
+}
+
+.order-online__section {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.order__container {
+  display: flex;
+}
+
+.order__link {
+  color: black;
+  font-weight: bolder;
+  width: 200px;
+  display:flex;
+  align-items: center;
+  margin-right: 12px;
+  padding: 12px 18px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.order__link:hover {
+  color: var(--secondary-blue);
+}
+
+.icon-image {
+  border-radius: 50%;
+  margin-right: 18px;
 }
 
 .grid-wrapper {
