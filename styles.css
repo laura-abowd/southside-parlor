@@ -270,6 +270,10 @@ h3 {
 }
 
 @media screen and (max-width: 850px) {
+
+  .order-dropdown {
+    display: none;
+  }
   .grid-container-new {
       display: flex;
       flex-direction: column;
@@ -287,7 +291,6 @@ h3 {
     object-fit: cover;
   }
 
-
   .order-online__links {
     display: flex;
     flex-direction: column;
@@ -297,8 +300,6 @@ h3 {
   .coupang-eats__link {
     margin-top: 24px;
   }
-
-
 }
 
 
