@@ -84,6 +84,10 @@ h3 {
   z-index: 1;
 }
 
+.link-out {
+  padding-left: 8px;
+}
+
 .menu-dropdown-content a {
   float: none;
   color: var(--primary-black);
@@ -153,17 +157,21 @@ h3 {
 .order__link {
   color: black;
   font-weight: bolder;
-  width: 200px;
+  width: 240px;
   display:flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 12px;
   margin-bottom: 12px;
   padding: 12px 18px;
   border: 2px solid black;
   border-radius: 8px;
-  text-decoration: underline;
+  text-decoration: none;
 }
-
+.image_label {
+  display: flex;
+  align-items: center;
+}
 .order__link:hover {
   color: var(--secondary-blue);
 }
