@@ -31,10 +31,11 @@ h1 {
   font-weight: 400;
 }
 
-h3 {
-  font-size: 2rem;
+h2 {
+  /*font-size: 2rem;*/
   font-family: var(--font-base);
   text-transform: uppercase;
+  margin: 32px 0 18px;
 }
 
 .nav__links {
@@ -239,7 +240,7 @@ h3 {
   height: 500px;
 }
 
-.about__text {
+.about__text p {
   font-family: var(--courier);
   font-size: 1.125rem;
 }
