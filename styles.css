@@ -280,11 +280,10 @@ h3 {
   }
 
   .container__images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: .5em;
+  }
 
   .container__images img {
     width: 100%;
