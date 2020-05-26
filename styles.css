@@ -23,6 +23,10 @@ body {
   display: flex;
   overflow: hidden;
   height: 80px;
+  position: absolute;
+  background-color: var(--white);
+  z-index: 1;
+  width: 100%;
 }
 
 h1 {
@@ -32,7 +36,6 @@ h1 {
 }
 
 h2 {
-  /*font-size: 2rem;*/
   font-family: var(--font-base);
   text-transform: uppercase;
   margin: 32px 0 18px;
@@ -169,6 +172,7 @@ h2 {
   border-radius: 8px;
   text-decoration: none;
 }
+
 .image_label {
   display: flex;
   align-items: center;
@@ -196,7 +200,7 @@ h2 {
 }
 
 .grid-container__hours {
-  /*max-width: 800px;*/
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -243,6 +247,10 @@ h2 {
 .about__text p {
   font-family: var(--courier);
   font-size: 1.125rem;
+}
+
+.hidden__br {
+  display: none;
 }
 
 .container__images {
@@ -297,7 +305,9 @@ h2 {
     width: 100%;
     object-fit: cover;
   }
-
+  .hidden__br {
+    display: visible;
+  }
 }
 
 
