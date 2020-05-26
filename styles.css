@@ -125,6 +125,10 @@ h2 {
     margin: 0 24px;
 }
 
+.show {
+  display: block;
+}
+
 .hero__image {
   background-image: url('assets/southside-parlor-hero.jpg');
   opacity: 0.75;
