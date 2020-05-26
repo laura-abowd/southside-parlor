@@ -21,7 +21,7 @@ body {
 
 #nav-bar {
   display: flex;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 80px;
   position: absolute;
   background-color: var(--white);
