@@ -114,7 +114,7 @@ h2 {
     background-color: #ddd;
   }
 
-.nav__menus:hover .menu-dropdown-content {
+/*.nav__menus:hover .menu-dropdown-content {
     display: block;
     margin: 0 24px;
 }
@@ -124,7 +124,7 @@ h2 {
     width: 12%;
     margin: 0 24px;
 }
-
+*/
 .show {
   display: block;
   margin: 0 24px;
