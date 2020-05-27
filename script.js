@@ -14,7 +14,7 @@ function toggleShowOrder() {
   document.getElementById('online-ordering').classList.toggle("show");
 }
 
-window.addEventListener('mouseup', function(event) {
+window.addEventListener('click', function(event) {
   if (!event.target.matches('.btn__nav')) {
     const dropdowns = document.getElementsByClassName("dropdown-content");
     let i;
