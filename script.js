@@ -14,7 +14,7 @@ function toggleShowOrder() {
   document.getElementById('online-ordering').classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.addEventListener('mousedown', function(event) {
   if (!event.target.matches('.btn__nav')) {
     const dropdowns = document.getElementsByClassName("dropdown-content");
     let i;
@@ -26,4 +26,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+});
