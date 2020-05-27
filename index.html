@@ -9,6 +9,7 @@
   <meta name="author" content="Southside Parlor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
@@ -17,10 +18,11 @@
   <nav id="nav-bar">
     <div class="nav__links">
       <div class="nav__menus">
-        <button class="btn btn__nav" id="menu">Menus
+        <button class="btn btn__nav"
+        id="menu-btn">Menus
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="menu-dropdown-content">
+        <div class="menu-dropdown-content dropdown-content nav__dropdown" id="menu">
           <a target="_blank" href="documents/Food.pdf">Food</a>
           <a target="_blank" href="documents/GreatestHits.pdf">Greatest Hits</a>
           <a target="_blank" href="documents/Hookah and Bottles.pdf">Hookah and Bottles</a>
@@ -31,10 +33,10 @@
         </div>
       </div>
       <div class="order-dropdown">
-        <button class="btn btn__nav">Order Online
+        <button class="btn btn__nav" id="order-btn">Order Online
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="order-dropdown-content">
+        <div class="order-dropdown-content dropdown-content nav__dropdown" id="online-ordering">
           <a target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">Shuttle Delivery<i class="fas fa-external-link-alt fa-xs  link-out"></i></a>
           <a target="_blank" href="https://get.coupangeats.com/">Coupang Eats<i class="fas fa-external-link-alt fa-xs link-out"></i></a>
         </div>
@@ -62,17 +64,16 @@
         </div>
       </div>
     </div>
-
     <div class="about">
       <div class="about__text">
         <h2>About</h2>
         <p>Welcome to Southside Parlor, where good ole southern hospitality meets South Korea's food scene. We are located in the heart of Itaewon and have been serving up tacos, wings, cocktails, and more since 2013. Check out our Facebook and Instagram pages for more information on our weekly events.<br></p>
-          <div>
-            <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook "><i class="fab fa-instagram fa-lg header__icon"></i></a>
-            <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram header__icon"><i class="fab fa-facebook fa-lg header__icon"></i></a>
-          </div>
-          <hr>
-          <p>
+        <div>
+          <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook "><i class="fab fa-instagram fa-lg header__icon"></i></a>
+          <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram header__icon"><i class="fab fa-facebook fa-lg header__icon"></i></a>
+        </div>
+        <hr>
+        <p>
           Get in touch: <br class="hidden__br">howdy@southsideparlor.com
         </p>
       </div>
@@ -103,7 +104,6 @@
         <p class="grid__column-p">+82 2-749-9522</p>
       </div>
     </div>
-    <!-- </section> -->
   </section>
   <section>
     <div class="container__images">
@@ -118,6 +118,7 @@
     <img src="assets/sp-logo-white.png" alt="" class="footer__logo">
     <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-2x footer__icon"></i></a>
   </footer>
-  <script type="text/javascript" src="script.js"></script>
+
+ <script src="script.js"></script>
 </body>
 </html>

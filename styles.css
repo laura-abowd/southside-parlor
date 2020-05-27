@@ -127,6 +127,7 @@ h2 {
 
 .show {
   display: block;
+  margin: 0 24px;
 }
 
 .hero__image {
@@ -220,7 +221,6 @@ h2 {
 }
 
 .grid-container-new {
-
   text-align: center;
   margin: 0 auto;
   display: grid;
@@ -286,6 +286,7 @@ h2 {
 }
 
 @media screen and (max-width: 850px) {
+
   .order-dropdown {
     display: none;
   }
