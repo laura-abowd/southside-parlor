@@ -48,7 +48,7 @@ h2 {
   width: 100%;
 }
 
-.btn {
+.ssp-btn{
   border: none;
   outline: none;
 }
@@ -114,17 +114,6 @@ h2 {
     background-color: #ddd;
   }
 
-/*.nav__menus:hover .menu-dropdown-content {
-    display: block;
-    margin: 0 24px;
-}
-
-.order-dropdown:hover .order-dropdown-content {
-    display: block;
-    width: 12%;
-    margin: 0 24px;
-}
-*/
 .show {
   display: block;
   margin: 0 24px;

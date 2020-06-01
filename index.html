@@ -8,6 +8,7 @@
   <meta name="keywords" content="Southside Parlor, cocktails, bar, kitchen, american food">
   <meta name="author" content="Southside Parlor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="styles.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
@@ -18,8 +19,8 @@
   <nav id="nav-bar">
     <div class="nav__links">
       <div class="nav__menus">
-        <button class="btn btn__nav"
-        id="menu-btn">Menus
+        <button class="ssp-btn btn__nav"
+        id="menu-btn" data-toggle="dropdown">Menus
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="menu-dropdown-content dropdown-content nav__dropdown" id="menu">
@@ -33,7 +34,7 @@
         </div>
       </div>
       <div class="order-dropdown">
-        <button class="btn btn__nav" id="order-btn">Order Online
+        <button class="ssp-btn btn__nav" id="order-btn">Order Online
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="order-dropdown-content dropdown-content nav__dropdown" id="online-ordering">
@@ -53,11 +54,11 @@
         <div class="order-online__links">
           <a class="order__link" target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">
             <div class="image_label">
-              <img class="icon-image" src="assets/icon-shuttle.png" alt="">Shuttle Delivery
+              <img class="icon-image" src="assets/icon-shuttle.svg" alt="">Shuttle Delivery
             </div><i class="fas fa-external-link-alt fa-xs link-out"></i>
           </a>
           <a class="order__link coupang-eats__link" target="_blank" href="https://get.coupangeats.com/">
-            <div class="image_label"><img class="icon-image" src="assets/icon-coupang.png" alt="">Coupang Eats
+            <div class="image_label"><img class="icon-image" src="assets/icon-coupang.svg" alt="">Coupang Eats
             </div>
             <i class="fas fa-external-link-alt fa-xs link-out"></i>
           </a>
