@@ -1,12 +1,10 @@
-
-
 :root {
     --black: hsl(228, 8%, 12%);
     --dark-gray: hsl(225, 4%, 22%);
     --secondary-blue: hsl(211, 57%, 45%);
     --white: hsl(39, 49%, 91%);
     --tan: hsl(32, 55%, 70%);
-    --font-base: 'Montserrat', sans-serif;
+/*    --font-base: 'Montserrat', sans-serif;*/
     --gothic:  'Pathway Gothic One', sans-serif;
     --courier: 'Courier Prime', monospace;
 }
@@ -47,9 +45,10 @@ body {
   position: absolute;
   background-color: var(--black);
   width: 100%;
+  z-index: 1;
 }
 
-.nav-logo{
+.nav-logo {
   position: absolute;
   left: 50%;
   top: 50%;
