@@ -9,6 +9,7 @@
     --courier: 'Courier Prime', monospace;
 }
 
+
 html,
 body {
     background-color: var(--black);
@@ -19,25 +20,28 @@ body {
     font-size: 100%;
 }
 
+
 /* <--- h1, h2. h3 --> */
-.h1-ssp {
+.header__text-h1 {
+  margin-top: 50px;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 90px;
-}
-
-.h2-ssp {
-  text-align: center;
-  text-transform: uppercase;
   font-size: 3.5rem;
-  margin: 50px 0;
+  font-weight: lighter;
 }
 
-.h3-ssp {
+.header__text-h2 {
+  text-align: center;
+  font-family: var(--courier);
   font-size: 2.5rem;
+}
+
+.header__text-h3 {
+  font-size: 2.5rem;
+}
+
+.uppercase {
   text-transform: uppercase;
 }
-
 /*<--- navigation bar ---> */
 .nav-bar {
   display: grid;
@@ -78,8 +82,11 @@ body {
 .nav__link:hover,
 .menu-navigation-link:hover {
   color: var(--white);
-}
 
+}
+.nav__link:focus {
+  outline: none;
+}
 .menu-navigation-link {
   text-decoration: none;
 }
@@ -166,7 +173,7 @@ body {
   justify-content: center;
   align-self: center;
   align-items: center;
-  margin: 0 50px;
+
 }
 
 .icon {
@@ -214,7 +221,12 @@ body {
 }
 
 .star {
-  padding: 18px 0;
+  /*padding: 18px 0;*/
+  height: 100%;
+  display: grid;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
 }
 
 .container__images {

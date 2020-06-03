@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Southside Parlor | Menus</title>
+  <title>Southside Parlor</title>
   <meta name="description" content="Bar and kitchen based in Seoul, South Korea">
   <meta name="keywords" content="Southside Parlor, cocktails, bar, kitchen, american food">
   <meta name="author" content="Southside Parlor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="menus.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="menus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
@@ -45,7 +45,9 @@
       </div>
     </div>
   </nav>
-<!--   <div id="carousel-menus" class="carousel slide" data-ride="carousel">
+  <div class="hero__image-menu jumbotron-fluid">
+  </div>
+  <!--   <div id="carousel-menus" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner jumbotron-fluid">
       <div class="carousel-item active carousel-menus-img">
         <img class="d-block w-100 img__menu-items" src="assets/food.jpg" alt="First slide">
@@ -58,45 +60,60 @@
       </div>
     </div>
   </div> -->
- <div class="container">
-  <section class="section__header">
-    <h1 class="menus__h1">Menus</h1>
-  </section>
-  <section class="section__menus">
-    <div class="menus__grid-container menus__flex-container">
-      <div class="menu__items ">
-        <h2 class="menu__items-h2"><a class="a-menu__items" target="_blank" href="documents/Food.pdf">Food</a></h2>
+  <div class="container">
+    <section class="section__header">
+      <h1 class="header__text-h1 uppercase">Menus</h1>
+    </section>
+    <section class="section__menus">
+      <div class="menus__grid-container menus__flex-container">
+        <div class="menu__items ">
+          <div class="menu__items-content">
+          <h2 class="header__text-h2">Food</h2>
+          <img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items" target="_blank" href="documents/Food.pdf">View Menu</a>
+        </div>
+        </div>
+        <div class="menu__items">
+          <div class="menu__items-content">
+            <h2 class="header__text-h2">Beer</h2><img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items" target="_blank" href="documents/Beer and Highballs.pdf">View Menu</a>
+        </div>
+        </div>
+        <div class="menu__items">
+          <div class="menu__items-content">
+            <h2 class="header__text-h2">Classics</h2><img class="star-img-menu" src="assets/star.svg" alt="">
+            <a class="a-menu__items" target="_blank" href="documents/Classics.pdf">View Menu</a>
+          </div>
+        </div>
+        <div class="menu__items">
+          <div class="menu__items-content">
+            <h2 class="header__text-h2">Specials</h2>
+            <img class="star-img-menu" src="assets/star.svg" alt="">
+            <a class="a-menu__items" target="_blank" href="documents/Specials.pdf">View Menu</a>
+          </div>
+        </div>
       </div>
-      <div class="menu__items">
-        <h2 class="menu__items-h2"><a class="a-menu__items" target="_blank" href="documents/Beer and Highballs.pdf">Beer & Highballs</a></h2>
-      </div>
-      <div class="menu__items">
-        <h2 class="menu__items-h2"><a class="a-menu__items" target="_blank" href="documents/Classics.pdf">Classics</a></h2>
-      </div>
-
-      <div class="menu__items">
-        <h2 class="menu__items-h2"> <a class="a-menu__items" target="_blank" href="documents/Specials.pdf">Specials</a></h2>
-      </div>
-    </div>
-    <div class="container-menus">
-
-      <iframe class="menus-pdf" src="documents/Specials.pdf" ></iframe>
-    </div>
-  </section>
- </div>
-  <!-- <section>
-    <div class="container__images">
-      <img src="assets/food.jpg" alt="">
-      <img src="assets/bloody_mary.jpg" alt="">
-      <img src="assets/taco.jpg" alt="">
-      <img src="assets/wing_baskets.jpg" alt="">
-    </div>
-  </section> -->
+      <!--       <div  class="container-menus">
+        <div id="red-div" class="menu-display">
+          <iframe  id="menu-iframe" class="menus-pdf" src="documents/Food.pdf" name="data-src"></iframe>
+        </div>
+        <div class="menu-display">
+          <iframe class="menus-pdf" src="documents/Beer and Highballs.pdf"></iframe>
+        </div>
+        <div class="menu-display">
+          <iframe class="menus-pdf" src="documents/Classics.pdf"></iframe>
+        </div>
+        <div class="menu-display">
+          <iframe class="menus-pdf" src="documents/Specials.pdf"></iframe>
+        </div>
+      </div> -->
+    </section>
+  </div>
   <footer class="footer">
     <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook"><i class="fab fa-instagram fa-2x footer__icon"></i></a>
-    <img src="assets/sp-logo-white.png" alt="" class="footer__logo">
+    <img src="assets/logo-footer.png" alt="" class="footer__logo">
     <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-2x footer__icon"></i></a>
   </footer>
+  <script src="script.js"></script>
+  <!-- bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
