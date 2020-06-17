@@ -171,13 +171,15 @@ body {
 .header__text {
   display: flex;
   justify-content: center;
-  align-self: center;
   align-items: center;
-
 }
 
+.star {
+  padding: 0 12px;
+}
 .icon {
   color: var(--tan);
+  padding: 0 8px;
 }
 
 .hr-tan {
@@ -220,14 +222,14 @@ body {
   font-size: 1.25rem;
 }
 
-.star {
-  /*padding: 18px 0;*/
+/*.star {
+
   height: 100%;
   display: grid;
   align-self: center;
   align-items: center;
   justify-self: center;
-}
+}*/
 
 .container__images {
   display: flex;
