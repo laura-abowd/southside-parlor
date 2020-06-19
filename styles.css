@@ -65,7 +65,7 @@ body {
   color: var(--tan);
   background-color: inherit;
   font-family: inherit;
-  margin: 0 12px;
+  margin: 0 18px;
   border: none;
   outline: none;
 }
@@ -82,44 +82,8 @@ body {
   text-decoration: none;
 }
 
-/* <--- css dropdown hover ---> */
-/*.ssp-dropdown {
-  overflow: hidden;
-}
-*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--white);
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
 .link-out {
   padding-left: 8px;
-}
-
-.dropdown-content a {
-  float: none;
-  color: var(--black);
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.ssp-dropdown:hover
-.dropdown-content {
-    display: block;
-    width: 12%;
-}
-
-.show {
-  display: block;
-  margin: 0 24px;
 }
 
 /* <--- Hero image/section --->*/
@@ -191,7 +155,6 @@ body {
   padding: 0 12px;
 
 }
-
 
 .star {
   padding: 0 12px;

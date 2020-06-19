@@ -8,6 +8,7 @@
   <meta name="keywords" content="Southside Parlor, cocktails, bar, kitchen, american food">
   <meta name="author" content="Southside Parlor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="menus.css" />
@@ -16,38 +17,36 @@
 </head>
 
 <body class="body__menus">
-  <nav class="nav-bar">
-    <div class="nav-logo">
-      <a  href="index.html"> <img src="assets/logo-nav.svg" alt=""></a>
+  <nav class="navbar-size navbar navbar-expand-md">
+    <button type="button" class="navbar-dark navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="nav-logo" href="index.html"> <img src="assets/logo-nav.svg" alt=""></a>
+    <div class="collapse navbar-collapse" id="collapse_target">
+      <ul class="nav navbar-nav navbar-right ml-auto">
+        <li class="nav-item">
+          <a class="nav__link hover menu-navigation-link" href="overview.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link hover menu-navigation-link" href="menus.html">View Our Menus</a>
+        </li>
+        <li class="nav-item dropdown mr-5">
+          <a class="nav__link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Order Online
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu " aria-labelledby="dropdown_target">
+            <a class="dropdown-item" target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">Shuttle Delivery<i class="fas fa-external-link-alt fa-xs  link-out"></i></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" target="_blank" href="https://get.coupangeats.com/">Coupang Eats<i class="fas fa-external-link-alt fa-xs link-out"></i></a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="nav__links">
-      <div class="ssp-dropdown">
-        <button class="ssp-btn nav__link " id="order-btn">About
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content dropdown-content nav__dropdown">
-          <a target="" href="overview.html">Overview</a>
-          <a target="_blank" href="">Press</a>
-          <a target="_blank" href="">Bartenders</a>
-        </div>
-      </div>
-      <div class="ssp-dropdown">
-        <button class="ssp-btn nav__link " id="order-btn">Order Online
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content dropdown-content nav__dropdown" id="online-ordering">
-          <a target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">Shuttle Delivery<i class="fas fa-external-link-alt fa-xs  link-out"></i></a>
-          <a target="_blank" href="https://get.coupangeats.com/">Coupang Eats<i class="fas fa-external-link-alt fa-xs link-out"></i></a>
-        </div>
-      </div>
-      <div>
-        <a class="nav__link hover menu-navigation-link" href="menus.html">View Our Menus</a>
-      </div>
     </div>
   </nav>
 <!--   <div class="hero__image-menu jumbotron-fluid">
   </div> -->
-    <div id="carousel-menus" class="carousel slide carousel-menus" data-ride="carousel">
+ <div id="carousel-menus" class="carousel slide carousel-menus" data-ride="carousel">
     <div class="carousel-inner jumbotron-fluid">
       <div class="carousel-item active carousel-menus-img">
         <img class="d-block w-100 img__menu-items" src="assets/food.jpg" alt="First slide">
@@ -114,7 +113,7 @@
   </footer>
   <script src="script.js"></script>
   <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
