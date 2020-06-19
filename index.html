@@ -8,40 +8,39 @@
   <meta name="keywords" content="Southside Parlor, cocktails, bar, kitchen, american food">
   <meta name="author" content="Southside Parlor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <nav class="nav-bar">
-    <div class="nav-logo">
-      <a href="index.html"> <img src="assets/logo-nav.svg" alt=""></a>
+  <nav class="navbar-size navbar navbar-expand-md">
+    <button type="button" class="navbar-dark navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="nav-logo" href="index.html"> <img src="assets/logo-nav.svg" alt=""></a>
+    <div class="collapse navbar-collapse" id="collapse_target">
+      <ul class="nav navbar-nav navbar-right ml-auto">
+        <li class="nav-item">
+          <a class="nav__link hover menu-navigation-link" href="overview.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link hover menu-navigation-link" href="menus.html">View Our Menus</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav__link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Order Online
+          <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown_target">
+          <a class="dropdown-item" target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">Shuttle Delivery<i class="fas fa-external-link-alt fa-xs  link-out"></i></a>
+           <div class="dropdown-divider"></div>
+          <a class="dropdown-item"  target="_blank" href="https://get.coupangeats.com/">Coupang Eats<i class="fas fa-external-link-alt fa-xs link-out"></i></a>
+        </div>
+        </li>
+      </ul>
     </div>
-    <div class="nav__links">
-      <div class="ssp-dropdown">
-        <button class="ssp-btn nav__link " id="order-btn">About
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content dropdown-content nav__dropdown">
-          <a target="" href="overview.html">Overview</a>
-          <a target="_blank" href="">Press</a>
-          <a target="_blank" href="">Bartenders</a>
-        </div>
-      </div>
-      <div class="ssp-dropdown">
-        <button class="ssp-btn nav__link ">Order Online
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content dropdown-content nav__dropdown" id="online-ordering">
-          <a target="_blank" href="https://www.shuttledelivery.co.kr/en/restaurant/menu/69/southside-parlor">Shuttle Delivery<i class="fas fa-external-link-alt fa-xs  link-out"></i></a>
-          <a target="_blank" href="https://get.coupangeats.com/">Coupang Eats<i class="fas fa-external-link-alt fa-xs link-out"></i></a>
-        </div>
-      </div>
-      <div>
-        <a class="nav__link hover menu-navigation-link" href="menus.html">View Our Menus</a>
-      </div>
     </div>
   </nav>
   <div class="hero__image jumbotron-fluid">
@@ -56,48 +55,69 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <section class="information__section">
-      <div class="header__text">
-        <div>
-          <h2 class="header__text-h1 uppercase">Texas<img class="star" src="assets/star.svg" alt="star"></h2>
-        </div>
-        <div>
-          <h2 class="header__text-h1 uppercase ">Seoul</h2>
-        </div>
-      </div>
-      <div class="about">
-        <div class="about__text">
-          <h3 class="header__text-h3 uppercase">About</h3>
-          <p>Welcome to Southside Parlor, where good ole southern hospitality meets South Korea's food scene. We are located in the heart of Itaewon and have been serving up tacos, wings, cocktails, and more since 2013. Check out our Facebook and Instagram pages for more information on our weekly events.<br></p>
+  <!-- <div class="container "> -->
+  <div class="header-flex ">
+    <div class="vl-container mx-5 my-3">
+      <div class="vl"></div>
+      <div class="vl"></div>
+      <div class="vl"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+    </div>
+    <div class="container ">
+      <section class="information__section">
+        <div class="header__text">
           <div>
-            <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook "><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-lg header__icon"></i></a>
+            <h2 class="header__text-h1 uppercase">Texas<img class="star" src="assets/star.svg" alt="star">Seoul</h2>
           </div>
-          <hr class="hr-tan">
-          <p>
-            Get in touch: <br class="hidden__br">howdy@southsideparlor.com
-          </p>
         </div>
-      </div>
-      <div class="grid-container-new">
-        <div class="grid__column-new">
-          <h3 class="header__text-h3">Happy Hour</h3>
-          <p class="grid__column-p">Sunday-Friday,<br>6pm-9pm</p>
+        <div class="about">
+          <div class="about__text">
+            <h3 class="header__text-h3 uppercase">About</h3>
+            <p>Welcome to Southside Parlor, where good ole southern hospitality meets South Korea's food scene. We are located in the heart of Itaewon and have been serving up tacos, wings, cocktails, and more since 2013. Check out our Facebook and Instagram pages for more information on our weekly events.<br></p>
+            <div>
+              <a href="https://www.instagram.com/southsideparlor/" class="icon icon__facebook "><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-lg header__icon"></i></a>
+            </div>
+            <hr class="hr-tan">
+            <p>
+              Get in touch: <br class="hidden__br">howdy@southsideparlor.com
+            </p>
+          </div>
         </div>
-        <img src="assets/star.svg" alt="star">
-        <div class="grid__column-new">
-          <h3 class="header__text-h3 ">Location</h3>
-          <p class="grid__column-p">Yongsan-gu,<br>Itaewon-dong, <br>527 번지 4 층<br>Seoul, Korea 04345</p>
+        <div class="grid-container-new">
+          <div class="grid__column-new">
+            <h3 class="header__text-h3">Happy Hour</h3>
+            <p class="grid__column-p">Sunday-Friday,<br>6pm-9pm</p>
+          </div>
+          <img src="assets/star.svg" alt="star">
+          <div class="grid__column-new">
+            <h3 class="header__text-h3 ">Location</h3>
+            <p class="grid__column-p">Yongsan-gu,<br>Itaewon-dong, <br>527 번지 4 층<br>Seoul, Korea 04345</p>
+          </div>
+          <img src="assets/star.svg" alt="star">
+          <div class="grid__column-new">
+            <h3 class="header__text-h3 ">Contact</h3>
+            <p class="grid__column-p">+82 2-749-9522</p>
+          </div>
         </div>
-        <img src="assets/star.svg" alt="star">
-        <div class="grid__column-new">
-          <h3 class="header__text-h3 ">Contact</h3>
-          <p class="grid__column-p">+82 2-749-9522</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <div class="vl-container mx-5 my-3">
+      <div class="vl "></div>
+      <div class="vl"></div>
+      <div class="vl"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+      <div class="vl none"></div>
+    </div>
   </div>
+  <!-- </div> -->
   <section>
     <div class="container__images">
       <img src="assets/drink1.jpg" alt="">
@@ -112,7 +132,6 @@
     <a href="https://www.facebook.com/SouthsideParlor" class="icon icon__instagram"><i class="fab fa-facebook fa-2x footer__icon"></i></a>
   </footer>
   <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
