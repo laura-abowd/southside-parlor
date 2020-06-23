@@ -9,7 +9,6 @@
     --courier: 'Courier Prime', monospace;
 }
 
-
 html,
 body {
   background-color: var(--black);
@@ -44,21 +43,26 @@ body {
 }
 /*<--- navigation bar ---> */
 .navbar-size {
+  height: 80px;
 
+  background-color: var(--black);
+  width: 100%;
+
+}
+
+.navbar-size-home {
   height: 80px;
   position: absolute;
   background-color: var(--black);
   width: 100%;
   z-index: 1;
 }
-
 .nav-logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .nav__link {
   font-size: 1.125rem;
@@ -68,18 +72,15 @@ body {
   margin: 0 18px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
-.nav__link:hover,
-.menu-navigation-link:hover {
+.nav__link:hover {
   color: var(--white);
-
 }
+
 .nav__link:focus {
   outline: none;
-}
-.menu-navigation-link {
-  text-decoration: none;
 }
 
 .link-out {
@@ -100,18 +101,6 @@ body {
   height: 80vh;
 }
 
-.hero__image-overview {
-  background-image:
-  linear-gradient(
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-    ),
-  url('assets/southside-parlor-hero.jpg');
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-}
 
 .southside-hero-overlay {
   position: absolute;
