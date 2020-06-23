@@ -208,17 +208,23 @@ body {
   object-fit: cover;
 }
 
-/*images*/
-.team-img {
+/*overview.html*/
+
+.background-white {
   width: 100%;
-  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
+.team-img {
+  max-width: 800px;
+}
 
 .grid-container-overview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows: repeat(2, 1fr);*/
   grid-auto-rows: auto;
   width: 600px;
   margin: 0 auto;
