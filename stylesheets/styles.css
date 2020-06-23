@@ -140,6 +140,8 @@ body {
 
 .header-flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__text {
@@ -209,7 +211,10 @@ body {
 }
 
 /*overview.html*/
+.container__about {
+  margin: 0 1.5%;
 
+}
 .background-white {
   width: 100%;
   background-color: white;
@@ -244,10 +249,9 @@ body {
 
 .press-links-container {
   display: flex;
-  max-width: 400px;
-  margin: 0 auto;
+  /*max-width: 400px;*/
   margin-top: 24px;
-  justify-content: space-between;
+  justify-content: space-around;
   text-decoration: underline;
 }
 
@@ -255,7 +259,16 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
+}
 
+.img-wrapper {
+  max-width: 650px;
+  height: auto;
+}
+
+.img-wrapper-bartender {
+  max-width: 800px;
+  height: auto;
 }
 
 /*<--- footer styles---> */
