@@ -1,12 +1,12 @@
 :root {
-    --black: hsl(228, 8%, 12%);
-    --dark-gray: hsl(225, 4%, 22%);
-    --secondary-blue: hsl(211, 57%, 45%);
-    --white: hsl(39, 49%, 91%);
-    --tan: hsl(32, 55%, 70%);
-/*    --font-base: 'Montserrat', sans-serif;*/
-    --gothic:  'Pathway Gothic One', sans-serif;
-    --courier: 'Courier Prime', monospace;
+  --black: hsl(228, 8%, 12%);
+  --dark-gray: hsl(225, 4%, 22%);
+  --secondary-blue: hsl(211, 57%, 45%);
+  --white: hsl(39, 49%, 91%);
+  --tan: hsl(32, 55%, 70%);
+  /*    --font-base: 'Montserrat', sans-serif;*/
+  --gothic: 'Pathway Gothic One', sans-serif;
+  --courier: 'Courier Prime', monospace;
 }
 
 html,
@@ -17,13 +17,12 @@ body {
   margin: 0 auto;
   scroll-behavior: smooth;
   /*font-size: 100%;*/
-   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* <--- h1, h2. h3 --> */
 .header__text-h1 {
   margin-top: 50px;
-  text-align: center;
   font-size: 3.5rem;
   font-weight: lighter;
 }
@@ -41,13 +40,30 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
+
+/*vertical line design*/
+
+.vl-container {
+  display: flex;
+}
+
+.vl {
+  border-left: 1px solid var(--dark-gray);
+  height: 100vh;
+  padding: 0 12px;
+}
+
+.vl-sh {
+  border-left: 1px solid var(--dark-gray);
+  height: 50vh;
+  padding: 0 12px;
+}
+
 /*<--- navigation bar ---> */
 .navbar-size {
   height: 80px;
-
   background-color: var(--black);
   width: 100%;
-
 }
 
 .navbar-size-home {
@@ -57,6 +73,7 @@ body {
   width: 100%;
   z-index: 1;
 }
+
 .nav-logo {
   position: absolute;
   left: 50%;
@@ -90,17 +107,14 @@ body {
 /* <--- Hero image/section --->*/
 .hero__image {
   background-image:
-  linear-gradient(
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-    ),
-  url('assets/ssp_interior.jpg');
+    linear-gradient(rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)),
+    url('../assets/ssp_interior.jpg');
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 80vh;
 }
-
 
 .southside-hero-overlay {
   position: absolute;
@@ -114,7 +128,6 @@ body {
 }
 
 .container__hero-hours {
-  text-align: center;
   font-size: 1.5rem;
   list-style-type: none;
   font-family: var(--courier);
@@ -124,6 +137,7 @@ body {
 .container__hero-hours li {
   padding: 10px 0;
 }
+
 .header-flex {
   display: flex;
 }
@@ -133,30 +147,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.vl-container {
-  display: flex;
-
-}
-.vl {
-  border-left: 1px solid var(--dark-gray);
-  /*height: 800px;*/
-  height: 100vh;
-  padding: 0 12px;
-
-}
 
 .star {
   padding: 0 12px;
 }
+
 .icon {
   color: var(--tan);
   padding: 0 8px;
 }
 
 .hr-tan {
-   background-color: var(--tan);
+  background-color: var(--tan);
 }
-
 
 .information__section {
   max-width: 800px;
@@ -173,6 +176,7 @@ body {
   border-radius: 50%;
   margin-right: 18px;
 }
+
 .hidden__br {
   display: none;
 }
@@ -204,7 +208,51 @@ body {
   object-fit: cover;
 }
 
-/*<--- footer ---> */
+/*images*/
+.team-img {
+  width: 100%;
+  height: auto;
+}
+
+
+.grid-container-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
+  grid-auto-rows: auto;
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.grid-h1 {
+  grid-column: 1 / 3;
+  font-size: 5rem;
+  justify-self: center;
+}
+
+.grid-p {
+  grid-column: 2 / 4;
+  font-family: var(--courier);
+}
+
+.press-links-container {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 24px;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.press-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+
+}
+
+/*<--- footer styles---> */
 
 .footer {
   background-color: var(--black);
@@ -223,8 +271,11 @@ body {
   color: var(--white);
 }
 
-@media screen and (max-width: 1080px) {
+/*Desktop display*/
+/*Tablet*/
+/*Mobile*/
 
+@media screen and (max-width: 1080px) {
   .none {
     display: none;
   }
@@ -248,9 +299,9 @@ body {
   }
 
   .container__images {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em;
   }
 
   .container__images img {
@@ -270,5 +321,3 @@ body {
     display: block;
   }
 }
-
-
