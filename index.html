@@ -16,20 +16,22 @@
 </head>
 
 <body>
-  <nav class="navbar-size-home navbar navbar-expand-md">
-    <button type="button" class="navbar-dark navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+<nav class="navbar-size-home navbar navbar-expand-md">  <!-- toggle menu -->
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only"></span>
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="nav-logo" href="index.html"> <img src="assets/logo-nav.svg" alt=""></a>
+
     <div class="collapse navbar-collapse" id="collapse_target">
-      <ul class="nav navbar-nav navbar-right ml-auto">
-        <li class="nav-item">
+      <ul id="nav-list" class="nav navbar-nav navbar-right ml-auto">
+        <li class="nav-item my-3">
           <a class="nav__link hover menu-navigation-link" href="overview.html">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item my-3">
           <a class="nav__link hover menu-navigation-link" href="menus.html">View Our Menus</a>
         </li>
-        <li class="nav-item dropdown mr-5">
+        <li class="nav-item dropdown my-3 mr-5">
           <a class="nav__link order-online-dropdown dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Order Online
             <span class="caret"></span>
           </a>
@@ -61,6 +63,7 @@
       <div class="vl"></div>
       <div class="vl"></div>
       <div class="vl"></div>
+
       <div class="vl none"></div>
       <div class="vl none"></div>
       <div class="vl none"></div>
