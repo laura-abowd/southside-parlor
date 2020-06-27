@@ -125,7 +125,6 @@ body {
   font-size: 3rem;
   background-color: hsla(228, 8%, 12%, 80%);
   /*top: 70px;*/
-
   left: 0;
 }
 
@@ -302,8 +301,6 @@ body {
   }
 }
 
-
-
 @media screen and (max-width: 850px) {
 
   .order-dropdown {
@@ -334,10 +331,10 @@ body {
     display: visible;
   }
 
-  /*.vl {
+  .vl-sm-none {
     display: none;
   }
-*/
+
   .header-flex {
     display: block;
   }
