@@ -80,6 +80,10 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.logo {
+    width: 200px;
+    height: 100%;
+}
 
 .nav__link {
   font-size: 1.125rem;
@@ -124,7 +128,6 @@ body {
   color: var(--tan);
   font-size: 3rem;
   background-color: hsla(228, 8%, 12%, 80%);
-  /*top: 70px;*/
   left: 0;
 }
 
@@ -234,7 +237,6 @@ body {
   grid-auto-rows: auto;
   width: 600px;
   margin: 0 auto;
-
 }
 
 .grid-h1 {
@@ -277,6 +279,7 @@ body {
 .footer {
   background-color: var(--black);
   color: var(--white);
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,16 +287,21 @@ body {
 }
 
 .footer__logo {
-  padding: 32px 48px;
+  padding: 18px 32px;
+  width: 200px;
 }
 
 .footer__icon {
-  color: var(--white);
+  color: var(--tan);
 }
 
-/*Desktop display*/
-/*Tablet*/
-/*Mobile*/
+
+
+/*large devices only*/
+
+
+/*medium devices only*/
+
 
 @media screen and (max-width: 1080px) {
   .none {
