@@ -17,12 +17,12 @@ body {
   margin: 0 auto;
   scroll-behavior: smooth;
   /*font-size: 100%;*/
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 16px;
+  /*font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));*/
 }
 
 /* <--- h1, h2. h3 --> */
 .header__text-h1 {
-  margin-top: 50px;
   font-size: 3.5rem;
   font-weight: lighter;
 }
@@ -206,7 +206,6 @@ body {
 
 .container__images {
   display: flex;
-  margin-top: 100px;
   width: 100%;
 }
 
@@ -309,13 +308,14 @@ body {
 
  .hero__image {
     height: 50vh;
-}
-  .southside-hero-overlay {
-  font-size: 1rem;
-  height: 50vh;
-  width: 50%;
-}
+  }
 
+  .southside-hero-overlay {
+    font-size: 1rem;
+    height: 50vh;
+    width: 50%;
+  }
+}
 
 /*small devices only*/
 @media screen and (max-width: 850px) {
@@ -353,5 +353,28 @@ body {
 
   .header-flex {
     display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .toggle-absolute {
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+
+  .hero__image {
+    height: 50vh;
+  }
+  .southside-hero-overlay {
+    height: 50vh;
+    width: 100%;
+  }
+  .nav-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
