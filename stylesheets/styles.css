@@ -116,17 +116,22 @@ body {
   font-size: 3rem;
   background-color: hsla(228, 8%, 12%, 80%);
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container__hero-hours {
+  width: 50%;
+}
+
+.hero-hours {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 8%;
   align-items: center;
-  margin: auto;
   font-size: 1.5rem;
   list-style-type: none;
-  width: 55%;
 }
 
 .list_day {
