@@ -18,11 +18,12 @@
 <body class="body__menus">
   <nav class="navbar-size navbar navbar-expand-md">
 <!-- toggle menu -->
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <a class="nav-logo" href="index.html"> <img class="logo" src="assets/logo.svg" alt=""></a>
+     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="sr-only"></span>
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="nav-logo" href="index.html"> <img class="logo" src="assets/logo.svg" alt=""></a>
     <div class="collapse navbar-collapse" id="collapse_target">
       <ul class="nav navbar-nav navbar-right ml-auto">
         <li class="nav-item my-3">
@@ -47,7 +48,7 @@
   </nav>
 <!--   <div class="hero__image-menu jumbotron-fluid">
   </div> -->
- <div id="carousel-menus" class="carousel slide carousel-menus" data-ride="carousel">
+ <div id="carousel-menus" class="carousel slide carousel-menus carousel-fade" data-ride="carousel">
     <div class="carousel-inner jumbotron-fluid">
       <div class="carousel-item active carousel-menus-img">
         <img class="d-block w-100 img__menu-items" src="assets/food.jpg" alt="First slide">
@@ -59,10 +60,18 @@
         <img class="d-block w-100 img__menu-items" src="assets/bloody_mary.jpg" alt="Third slide">
       </div>
        <div class="carousel-item carousel-menus-img">
-        <img class="d-block w-100 img__menu-items" src="assets/wings.jpg" alt="Fourth slide">
+        <img class="d-block w-100 img__menu-items" src="assets/wing_baskets.jpg" alt="Fourth slide">
       </div>
     </div>
-  </div>
+  <!-- </div> -->
+<!--     <section>
+    <div class="container__images">
+      <img src="assets/food.jpg" alt="">
+      <img src="assets/taco.jpg" alt="">
+      <img src="assets/wing_baskets.jpg" alt="">
+      <img src="assets/bloody_mary.jpg" alt="">
+    </div>
+  </section> -->
   <div class="container">
     <section class="section__header">
       <h1 class="header__text-h1 text-center uppercase">Menus</h1>
@@ -72,25 +81,25 @@
         <div class="menu__items ">
           <div class="menu__items-content">
           <h2 class="header__text-h2">Food</h2>
-          <img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items" target="_blank" href="documents/Food.pdf">View Menu</a>
+          <img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items" target="_blank" href="documents/Food.pdf">View Menu<i class="ml-2 fas fa-external-link-alt fa-xs link-out"></i></a>
         </div>
         </div>
         <div class="menu__items">
           <div class="menu__items-content">
-            <h2 class="header__text-h2">Beer</h2><img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items" target="_blank" href="documents/Beer and Highballs.pdf">View Menu</a>
+            <h2 class="header__text-h2">Beer</h2><img class="star-img-menu" src="assets/star.svg" alt=""><a class="a-menu__items " target="_blank" href="documents/Beer and Highballs.pdf">View Menu<i class="ml-2 fas fa-external-link-alt fa-xs link-out"></i></a>
         </div>
         </div>
         <div class="menu__items">
           <div class="menu__items-content">
             <h2 class="header__text-h2">Classics</h2><img class="../star-img-menu" src="assets/star.svg" alt="">
-            <a class="a-menu__items" target="_blank" href="documents/Classics.pdf">View Menu</a>
+            <a class="a-menu__items" target="_blank" href="documents/Classics.pdf">View Menu<i class="ml-2 fas fa-external-link-alt fa-xs link-out"></i></a>
           </div>
         </div>
         <div class="menu__items">
           <div class="menu__items-content">
             <h2 class="header__text-h2">Specials</h2>
             <img class="star-img-menu" src="assets/star.svg" alt="">
-            <a class="a-menu__items" target="_blank" href="documents/Specials.pdf">View Menu</a>
+            <a class="a-menu__items" target="_blank" href="documents/Specials.pdf">View Menu<i class="ml-2 fas fa-external-link-alt fa-xs link-out"></i></a>
           </div>
         </div>
       </div>
