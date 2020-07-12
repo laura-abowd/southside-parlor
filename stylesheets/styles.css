@@ -16,7 +16,6 @@ body {
   font-family: var(--gothic);
   margin: 0 auto;
   scroll-behavior: smooth;
-  /*font-size: 100%;*/
   font-size: 16px;
 }
 
@@ -269,9 +268,6 @@ body {
   font-size: 1.125rem;
   grid-column: 3 / 4;
   text-decoration: underline;
-  /*justify-content: end;*/
-  justify-self: center;
-
 }
 
 .press-links a {
@@ -288,16 +284,18 @@ body {
   height: auto;
 }
 
+.hl-footer {
+  height: 100%;
+  border-top: solid 1px var(--tan);
+}
 /*<--- footer styles---> */
 .footer {
   border-top: solid 1px var(--tan);
   background-color: var(--black);
-  color: var(--white);
-  margin-top: 24px;
+  color: var(--tan);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 
 .footer__logo {
