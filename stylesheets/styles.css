@@ -35,6 +35,9 @@ body {
   font-size: 2.5rem;
 }
 
+.header__text-h4 {
+  font-size: 1.75rem;
+}
 /*vertical line design*/
 .vl-container {
   display: flex;
@@ -110,9 +113,6 @@ body {
 }
 
 .southside-hero-overlay {
-  /*position: absolute;*/
-  /*height: calc(80vh - 70px);*/
-  /*height: 80vh;*/
   width: 33%;
   color: var(--tan);
   font-size: 3rem;
@@ -297,11 +297,18 @@ body {
   border-top: solid 1px var(--tan);
   background-color: var(--black);
   color: var(--tan);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
+.footer__column-1 {
+  align-self: center;
+}
+
+.footer p {
+  font-family: var(--courier)
+}
 .footer__logo {
   padding: 18px 32px;
   width: 200px;
