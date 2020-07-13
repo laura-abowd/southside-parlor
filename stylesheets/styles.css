@@ -292,6 +292,10 @@ body {
   /*border-top: solid 1px var(--tan);*/
   background-color: var(--black);
   color: var(--tan);
+
+}
+
+.footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -299,12 +303,12 @@ body {
 
 .footer__column-1 {
   align-self: center;
-
 }
 
-.footer p {
+.footer-grid p {
   font-family: var(--courier)
 }
+
 .footer__logo {
   padding: 18px 32px;
   width: 200px;
@@ -375,6 +379,13 @@ body {
   .header-flex {
     display: block;
   }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+}
+
 }
 
 @media screen and (max-width: 650px) {
@@ -399,4 +410,5 @@ body {
     justify-content: center;
     align-items: center;
   }
+
 }
