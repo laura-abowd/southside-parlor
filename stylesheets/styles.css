@@ -221,12 +221,6 @@ body {
   object-fit: cover;
 }
 
-/*overview.html*/
-/*.container__about {
-  margin: 0 1.5%;
-
-}*/
-
 .background-white {
   width: 100%;
   background-color: #FAFAFA;
@@ -289,12 +283,13 @@ body {
 }
 
 .hl-footer {
-  height: 100%;
+
   border-top: solid 1px var(--tan);
 }
+
 /*<--- footer styles---> */
 .footer {
-  border-top: solid 1px var(--tan);
+  /*border-top: solid 1px var(--tan);*/
   background-color: var(--black);
   color: var(--tan);
   display: grid;
@@ -304,6 +299,7 @@ body {
 
 .footer__column-1 {
   align-self: center;
+
 }
 
 .footer p {
@@ -335,7 +331,6 @@ body {
 
   .southside-hero-overlay {
     font-size: 1rem;
-    /*height: 50vh;*/
     width: 50%;
   }
   .container__hero-hours {
@@ -395,7 +390,6 @@ body {
   }
 
   .southside-hero-overlay {
-    /*height: 50vh;*/
     width: 100%;
   }
 
