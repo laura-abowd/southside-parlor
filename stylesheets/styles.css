@@ -97,7 +97,7 @@ body {
   padding-left: 8px;
 }
 
-/* <--- Hero image/section --->*/
+/* <--- Homepage Hero image/section --->*/
 .hero__image {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0),
@@ -150,11 +150,10 @@ body {
   color: hsla(32, 55%, 60%, 30%);
 }
 
+/* <---header section with vl---> */
 .header-flex {
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
-
 }
 
 .header__text {
@@ -222,18 +221,7 @@ body {
   object-fit: cover;
 }
 
-.background-white {
-  width: 100%;
-  background-color: #FAFAFA;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.team-img {
-  max-width: 800px;
-}
-
+/*<---Overview page---> */
 .grid-container-overview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -252,6 +240,18 @@ body {
 .grid-p {
   grid-column: 2 / 4;
   font-family: var(--courier);
+}
+
+.background-white {
+  width: 100%;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.team-img {
+  max-width: 800px;
 }
 
 .press-links-1 {
