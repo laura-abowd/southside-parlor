@@ -109,7 +109,6 @@ body {
   height: 80vh;
   min-height: 400px;
   display: flex;
-
 }
 
 .southside-hero-overlay {
@@ -226,9 +225,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
-
-  width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 .grid-h1 {
@@ -252,6 +250,13 @@ body {
 
 .team-img {
   max-width: 800px;
+}
+
+.grid__wrapper-overview {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 24px;
+  margin: 100px 0;
 }
 
 .press-links-1 {
@@ -279,10 +284,11 @@ body {
   height: auto;
 }
 
-.img-wrapper-bartender {
-  max-width: 800px;
-  height: auto;
+
+section {
+  /*background-color: pink;*/
 }
+
 
 .hl-footer {
   border-top: solid 1px var(--tan);
@@ -361,6 +367,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 50px 0;
   }
 
   .container__images {
@@ -370,7 +377,7 @@ body {
   }
 
   .team-img {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   .container__images img {
@@ -387,6 +394,10 @@ body {
   }
 
   .header-flex {
+    display: block;
+  }
+
+  .grid__wrapper-overview {
     display: block;
   }
 
