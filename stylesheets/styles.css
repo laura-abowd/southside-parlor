@@ -315,7 +315,6 @@ section {
 }
 
 .footer__logo {
-  padding: 18px 32px;
   width: 200px;
 }
 
@@ -432,4 +431,10 @@ section {
     align-items: center;
   }
 
+.grid__container-menus {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 24px;
+
+  }
 }

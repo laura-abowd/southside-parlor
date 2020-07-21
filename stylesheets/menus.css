@@ -9,14 +9,7 @@
   background-position:center;
 }
 
-.section__menus {
-  margin: 0 auto;
-  max-width: 800px;
-  max-height: 1200px;
-}
-
-.menus__flex-container {
-  margin: 50px 0;
+.grid__container-menus {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 24px;
@@ -46,7 +39,6 @@
   color: var(--tan);
   text-decoration: underline;
   font-size: 24px;
-
 }
 
 .a-menu__items:hover {
