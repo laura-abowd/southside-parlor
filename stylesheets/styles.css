@@ -318,11 +318,13 @@ body {
 }
 
 
-/*<------ Menus page ----->*/
+/*<------ Menus page with carousel ----->*/
 
-.carousel-menus-img {
-   /*background-size: cover;*/
-  height: 50vh;
+
+
+.carousel-inner .carousel-item img {
+  /*max-height: 400px;*/
+  min-width: auto;
 }
 
 .img__menu-items {
