@@ -38,6 +38,7 @@ body {
 .header__text-h4 {
   font-size: 1.75rem;
 }
+
 /*vertical line design*/
 .vl-container {
   display: flex;
@@ -194,7 +195,7 @@ body {
   display: none;
 }
 
-/* <---information grid container --->*/
+/* <---homepage information grid container --->*/
 .grid-container-new {
   text-align: center;
   margin: 0 auto;
@@ -220,7 +221,7 @@ body {
   object-fit: cover;
 }
 
-/*<---Overview page---> */
+/*<---About Us page---> */
 .grid-container-overview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -284,12 +285,6 @@ body {
   height: auto;
 }
 
-
-section {
-  /*background-color: pink;*/
-}
-
-
 .hl-footer {
   border-top: solid 1px var(--tan);
 }
@@ -320,6 +315,70 @@ section {
 
 .footer__icon {
   color: var(--tan);
+}
+
+
+/*<------ Menus page ----->*/
+
+.carousel-menus-img {
+   /*background-size: cover;*/
+  height: 50vh;
+}
+
+.img__menu-items {
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.menu__items {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  background-color: var(--dark-gray);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__items-content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 24px;
+}
+
+.a-menu__items {
+  color: var(--tan);
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.a-menu__items:hover {
+  color: var(--white);
+}
+
+.container-menus {
+  background-color: var(--white);
+  width: 100%;
+  height: 1200px;
+  margin-top: 50px;
+
+}
+
+
+.grid__container-menus {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 24px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.menus-pdf {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -400,6 +459,13 @@ section {
     display: block;
   }
 
+  .grid__container-menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -408,6 +474,8 @@ section {
 
 }
 
+
+/*<--phone screen sizes--->*/
 @media screen and (max-width: 650px) {
 
   .toggle-absolute {
@@ -429,12 +497,5 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-.grid__container-menus {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 24px;
-
   }
 }
