@@ -251,6 +251,7 @@ body {
 
 .team-img {
   max-width: 800px;
+  width: 100%;
 }
 
 .grid__wrapper-overview {
@@ -434,9 +435,9 @@ body {
     grid-gap: .5em;
   }
 
-  .team-img {
+ /* .team-img {
     max-width: 300px;
-  }
+  }*/
 
   .container__images img {
     width: 100%;
