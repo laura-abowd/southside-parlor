@@ -460,10 +460,7 @@ body {
   }
 
   .grid__container-menus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: auto;
 }
 
   .footer-grid {
